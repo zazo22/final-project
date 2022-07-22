@@ -1,0 +1,439 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: glaho;
+    src: url(../fonts/bpg_glaho_sylfaen_[FONTS.GE]/bpg_glaho_sylfaen.ttf);
+}
+@font-face {
+    font-family: antuniii;
+    src: url(../fonts/Anton/Anton-Regular.ttf);
+}
+
+h1{
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/logo.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-indent: -33333px;
+    margin: 0 ;
+    }
+
+h1 a{
+    display: block;
+    width: 80px;
+    height: 80px;
+}    
+
+header{
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff00;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid #ffffff3c;
+    border-radius: 0 0 20px 20px;
+    
+}
+
+
+header li:hover{
+    background-color: #0c3a5ee4;
+    border-radius: 0 15px 0 15px;
+}
+
+header ul{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: -80px; 
+    
+}
+
+header li{
+    font-family: glaho;
+    font-size: large;
+}
+
+header ul a{
+    padding: 60px 15px;
+    position: relative;
+    color: #ffffff;
+}
+
+header ul a:hover{
+    font-size: 20px;
+}
+
+header ul li a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #3f0c0c;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}
+
+.input-group{
+    position: absolute;
+    top: 44px;
+    right: 60px;
+    display: flex;
+    border: 1px solid black;
+}
+
+
+.mtavarimain{
+    background-image: url(../img/mix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.aboutmain, .betonimain, .blokimain, .contactmain, .gallerymain, .productionmain{
+    background-color: #000000;
+}
+
+.mixori{
+    width: 344px;
+    height: 124px;
+    background-color: #000000ac;
+    position: absolute;
+    top: 200px;
+    left: 34%;
+}
+.saxeli{
+    
+    text-align: center;
+    color: #ffffff;
+    padding-top: 16px;
+    font-size: 66px;
+    font-family: antuniii;
+
+}
+
+/* about */
+p{
+    color: #ffffff;
+}
+
+.abouth2{
+    color: #ffffff;
+    position: absolute;
+    top: 160px;
+    left: 552px;
+
+}
+
+.abouttext{
+margin-left: 40px;
+margin-right: 40px;
+text-align: center;
+position: absolute;
+top:220px ;
+}
+
+
+
+/* production */
+.production{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+
+}
+
+.production article{
+    width: 30%;
+    margin-left: 20px;
+}
+.productionimg{
+    width: 280px;
+    overflow: hidden;
+}
+.productionimg img{
+    width: 100%;
+    height: 230px;
+}
+.production h2{
+    font-size: 20px;
+}
+.production h2 a{
+    color: #ffffff;
+}
+
+/*betoni*/
+
+.betoniimg{
+    width: 400px;
+    overflow: hidden;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+.betoniimg img{
+    width: 100%;
+}
+.betonitext{
+    width: 400px;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+.betonih{
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 15px;
+} 
+
+.betonip{
+    font-size: 14px;
+}
+
+/* contact */
+
+.contact{
+    /* background-color: #3f0c0c; */
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+.info{
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.dakavshireba{
+    width: 240px;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+}
+#firstname, #phone{
+    width: 118px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+}
+#mail, #gagzavna{
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    
+}
+#yourmessage{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    resize: none;
+    outline: none;
+
+}
+.map{
+    position: absolute;
+    top: 150px;
+    left: 700px;
+}
+
+
+/* chat */
+
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 110px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+/* .bg{
+    /* background-color: aquamarine; *
+    background-image: url(../img/mix.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+/* iwyeba footeri*/
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff00;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #ffffff3c;
+    border-radius: 20px 20px 0 0;
+    color: #ffffff;
+    font-family: glaho;
+}
+
+.saavtoro{
+    text-align: center;
+    padding-top: 20px;
+}
+.created{
+    text-align: center;
+}
+.follow{
+  position: absolute; 
+  top: 20px; right: 20px;
+}
+.social{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+
+
+.owl-carousel{
+    position: absolute;
+    top: 150px;
+}
+
+.item{
+    width: 400px;
+    height: 250px;
+   
+}
+.item img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* @media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 600px){
+    .pro{
+        background-color: #ffffff ;
+    }
+   .rkinabetoni{
+    width: 100%;
+   }
+   .production{
+    width: 100%;
+    flex-wrap: wrap;
+   }
+   ul{
+    flex-direction: column;
+   }
+   .foot{
+    flex-direction: column;
+    width: 100%;
+   }
+
+}
+
+@media only screen and (max-width: 400px){
+
+} */
+
+@media only screen and (max-width: 600px){
+    .production{
+        flex-direction: column;
+    }
+    .betoniimg{
+        width: 200px;
+        position: absolute;
+        top: 150px;
+        left: 90px;
+        
+    }
+    .betonitext{
+        width: 100%;
+        position: absolute;
+        top: 300px;
+        left: 2px;
+        text-align: center;
+
+    }
+
+}
